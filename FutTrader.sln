@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutTrader.Scheduler.Domain", "FutTrader.Scheduler.Domain\FutTrader.Scheduler.Domain.csproj", "{105B236F-A6C1-4CE4-B800-1767EB88BA78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutTrader.Scheduler.Functions", "FutTrader.Scheduler.Functions\FutTrader.Scheduler.Functions.csproj", "{DBE393BF-725F-4636-AD20-3FD22BAE04D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{105B236F-A6C1-4CE4-B800-1767EB88BA78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{105B236F-A6C1-4CE4-B800-1767EB88BA78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{105B236F-A6C1-4CE4-B800-1767EB88BA78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE393BF-725F-4636-AD20-3FD22BAE04D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE393BF-725F-4636-AD20-3FD22BAE04D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE393BF-725F-4636-AD20-3FD22BAE04D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE393BF-725F-4636-AD20-3FD22BAE04D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

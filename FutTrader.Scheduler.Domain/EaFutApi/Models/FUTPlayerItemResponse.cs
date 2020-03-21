@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace FutTrader.Domain.EaFutApi.Models
 {
-    public class FUTPlayerItemList
+    public class FUTPlayerItemResponse
     {
         [JsonPropertyName("page")]
         public int Page { get; set; }
@@ -17,8 +17,8 @@ namespace FutTrader.Domain.EaFutApi.Models
         [JsonPropertyName("count")]
         public int Count { get; set; }
 
-        [JsonPropertyName("items")]
-        public List<FUTPlayerItem> Items { get; set; }
+        // [JsonPropertyName("items")]
+        // public List<FUTPlayerItem> Items { get; set; }
 
     }
 }
