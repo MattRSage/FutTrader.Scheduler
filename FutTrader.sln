@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutTrader.Domain", "FutTrader.Domain\FutTrader.Domain.csproj", "{105B236F-A6C1-4CE4-B800-1767EB88BA78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutTrader.Scheduler.Domain", "FutTrader.Scheduler.Domain\FutTrader.Scheduler.Domain.csproj", "{105B236F-A6C1-4CE4-B800-1767EB88BA78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

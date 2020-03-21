@@ -1,207 +1,206 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
+﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
-namespace Crawler.Models
+namespace FutTrader.Domain.EaFutApi.Models
 {
     public class FUTPlayerItem
     {
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public int Id { get; set; }
 
-        [JsonProperty("baseId")]
+        [JsonPropertyName("baseId")]
         public int BaseId { get; set; }
 
-        [JsonProperty("rating")]
+        [JsonPropertyName("rating")]
         public int Rating { get; set; }
 
-        [JsonProperty("commonName")]
+        [JsonPropertyName("commonName")]
         public string CommonName { get; set; }
 
-        [JsonProperty("firstName")]
+        [JsonPropertyName("firstName")]
         public string FirstName { get; set; }
 
-        [JsonProperty("lastName")]
+        [JsonPropertyName("lastName")]
         public string LastName { get; set; }
 
-        [JsonProperty("league")]
+        [JsonPropertyName("league")]
         public FUTLeagueItem League { get; set; }
 
-        [JsonProperty("nation")]
+        [JsonPropertyName("nation")]
         public FUTNationItem Nation { get; set; }
 
-        [JsonProperty("club")]
+        [JsonPropertyName("club")]
         public FUTClubItem Club { get; set; }
 
-        [JsonProperty("position")]
+        [JsonPropertyName("position")]
         public string Position { get; set; }
 
-        [JsonProperty("composure")]
+        [JsonPropertyName("composure")]
         public int Composure { get; set; }
 
-        [JsonProperty("playStyle")]
+        [JsonPropertyName("playStyle")]
         public string PlayStyle { get; set; }
 
-        [JsonProperty("height")]
+        [JsonPropertyName("height")]
         public int Height { get; set; }
 
-        [JsonProperty("weight")]
+        [JsonPropertyName("weight")]
         public int Weight { get; set; }
 
-        [JsonProperty("birthdate")]
+        [JsonPropertyName("birthdate")]
         public string BirthDate { get; set; }
 
-        [JsonProperty("age")]
+        [JsonPropertyName("age")]
         public int Age { get; set; }
 
-        [JsonProperty("acceleration")]
+        [JsonPropertyName("acceleration")]
         public int Acceleration { get; set; }
 
-        [JsonProperty("aggression")]
+        [JsonPropertyName("aggression")]
         public int Aggression { get; set; }
 
-        [JsonProperty("agility")]
+        [JsonPropertyName("agility")]
         public int Agility { get; set; }
 
-        [JsonProperty("balance")]
+        [JsonPropertyName("balance")]
         public int Balance { get; set; }
 
-        [JsonProperty("ballcontrol")]
+        [JsonPropertyName("ballcontrol")]
         public int BallControl { get; set; }
 
-        [JsonProperty("foot")]
+        [JsonPropertyName("foot")]
         public string Foot { get; set; }
 
-        [JsonProperty("skillmoves")]
+        [JsonPropertyName("skillmoves")]
         public int SkillMoves { get; set; }
 
-        [JsonProperty("crossing")]
+        [JsonPropertyName("crossing")]
         public int Crossing { get; set; }
 
-        [JsonProperty("curve")]
+        [JsonPropertyName("curve")]
         public int Curve { get; set; }
 
-        [JsonProperty("dribbling")]
+        [JsonPropertyName("dribbling")]
         public int Dribbling { get; set; }
 
-        [JsonProperty("finishing")]
+        [JsonPropertyName("finishing")]
         public int Finishing { get; set; }
 
-        [JsonProperty("freekickaccuracy")]
+        [JsonPropertyName("freekickaccuracy")]
         public int FreeKickAccuracy { get; set; }
 
-        [JsonProperty("gkdiving")]
+        [JsonPropertyName("gkdiving")]
         public int GkDiving { get; set; }
 
-        [JsonProperty("gkhandling")]
+        [JsonPropertyName("gkhandling")]
         public int GkHandling { get; set; }
 
-        [JsonProperty("gkkicking")]
+        [JsonPropertyName("gkkicking")]
         public int GkKicking { get; set; }
 
-        [JsonProperty("gkpositioning")]
+        [JsonPropertyName("gkpositioning")]
         public int GkPositioning { get; set; }
 
-        [JsonProperty("gkreflexes")]
+        [JsonPropertyName("gkreflexes")]
         public int GkReflexes { get; set; }
 
-        [JsonProperty("headingaccuracy")]
+        [JsonPropertyName("headingaccuracy")]
         public int HeadingAccuracy { get; set; }
 
-        [JsonProperty("interceptions")]
+        [JsonPropertyName("interceptions")]
         public int Interceptions { get; set; }
 
-        [JsonProperty("jumping")]
+        [JsonPropertyName("jumping")]
         public int Jumping { get; set; }
 
-        [JsonProperty("longpassing")]
+        [JsonPropertyName("longpassing")]
         public int LongPassing { get; set; }
 
-        [JsonProperty("longshots")]
+        [JsonPropertyName("longshots")]
         public int LongShots { get; set; }
 
-        [JsonProperty("marking")]
+        [JsonPropertyName("marking")]
         public int Marking { get; set; }
 
-        [JsonProperty("penalties")]
+        [JsonPropertyName("penalties")]
         public int Penalties { get; set; }
 
-        [JsonProperty("positioning")]
+        [JsonPropertyName("positioning")]
         public int Positioning { get; set; }
 
-        [JsonProperty("potential")]
+        [JsonPropertyName("potential")]
         public int Potential { get; set; }
 
-        [JsonProperty("reactions")]
+        [JsonPropertyName("reactions")]
         public int Reactions { get; set; }
 
-        [JsonProperty("shortpassing")]
+        [JsonPropertyName("shortpassing")]
         public int ShortPassing { get; set; }
 
-        [JsonProperty("shotpower")]
+        [JsonPropertyName("shotpower")]
         public int ShotPower { get; set; }
 
-        [JsonProperty("slidingtackle")]
+        [JsonPropertyName("slidingtackle")]
         public int SlidingTackle { get; set; }
 
-        [JsonProperty("sprintspeed")]
+        [JsonPropertyName("sprintspeed")]
         public int SprintSpeed { get; set; }
 
-        [JsonProperty("standingtackle")]
+        [JsonPropertyName("standingtackle")]
         public int StandingTackle { get; set; }
 
-        [JsonProperty("stamina")]
+        [JsonPropertyName("stamina")]
         public int Stamina { get; set; }
 
-        [JsonProperty("strength")]
+        [JsonPropertyName("strength")]
         public int Strength { get; set; }
 
-        [JsonProperty("vision")]
+        [JsonPropertyName("vision")]
         public int Vision { get; set; }
 
-        [JsonProperty("volleys")]
+        [JsonPropertyName("volleys")]
         public int Volleys { get; set; }
 
-        [JsonProperty("weakFoot")]
+        [JsonPropertyName("weakFoot")]
         public int WeakFoot { get; set; }
 
-        [JsonProperty("traits")]
+        [JsonPropertyName("traits")]
         public string[] Traits { get; set; }
 
-        [JsonProperty("specialities")]
+        [JsonPropertyName("specialities")]
         public string[] Specialities { get; set; }
 
-        [JsonProperty("atkWorkRate")]
+        [JsonPropertyName("atkWorkRate")]
         public string AttackWorkRate { get; set; }
 
-        [JsonProperty("defWorkRate")]
+        [JsonPropertyName("defWorkRate")]
         public string DefensiveWorkRate { get; set; }
 
-        [JsonProperty("attributes")]
+        [JsonPropertyName("attributes")]
         public List<FUTAttribute> Attributes { get; set; }
 
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
-        [JsonProperty("rarityId")]
+        [JsonPropertyName("rarityId")]
         public int RarityId { get; set; }
 
-        [JsonProperty("isIcon")]
+        [JsonPropertyName("isIcon")]
         public bool IsIcon { get; set; }
 
-        [JsonProperty("quality")]
+        [JsonPropertyName("quality")]
         public string Quality { get; set; }
 
-        [JsonProperty("isGK")]
+        [JsonPropertyName("isGK")]
         public bool IsGk { get; set; }
 
-        [JsonProperty("positionFull")]
+        [JsonPropertyName("positionFull")]
         public string PositionFull { get; set; }
 
-        [JsonProperty("isSpecialType")]
+        [JsonPropertyName("isSpecialType")]
         public string IsSpecialType { get; set; }
 
-        [JsonProperty("itemType")]
+        [JsonPropertyName("itemType")]
         public string ItemType { get; set; }
     }
 }
