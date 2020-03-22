@@ -5,6 +5,8 @@ namespace FutTrader.Domain.FutApi.Models
 {
     public class FUTPlayerItem
     {
+        public int FutPlayerItemId { get; set; }
+        
         [JsonPropertyName("baseId")]
         public int BaseId { get; set; }
         
