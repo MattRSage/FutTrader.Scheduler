@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace FutTrader.Domain.EaFutApi.Models
+namespace FutTrader.Domain.FutApi.Models
 {
-    public class FUTClubItem
+    public class FUTNationItem
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }

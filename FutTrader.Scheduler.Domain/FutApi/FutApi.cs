@@ -2,9 +2,9 @@
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
-using FutTrader.Domain.EaFutApi.Models;
+using FutTrader.Domain.FutApi.Models;
 
-namespace FutTrader.Domain.EaFutApi
+namespace FutTrader.Domain.FutApi
 {
     public class FutApi : IFutApi
     {

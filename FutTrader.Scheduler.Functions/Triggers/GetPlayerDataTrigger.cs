@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using FutTrader.Domain.EaFutApi;
+using FutTrader.Domain.FutApi;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 

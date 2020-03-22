@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using FutTrader.Domain.EaFutApi;
+using FutTrader.Domain.FutApi;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;
