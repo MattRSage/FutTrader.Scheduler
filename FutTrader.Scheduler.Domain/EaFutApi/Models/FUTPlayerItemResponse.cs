@@ -17,8 +17,8 @@ namespace FutTrader.Domain.EaFutApi.Models
         [JsonPropertyName("count")]
         public int Count { get; set; }
 
-        // [JsonPropertyName("items")]
-        // public List<FUTPlayerItem> Items { get; set; }
+        [JsonPropertyName("items")]
+        public List<FUTPlayerItem> Items { get; set; }
 
     }
 }

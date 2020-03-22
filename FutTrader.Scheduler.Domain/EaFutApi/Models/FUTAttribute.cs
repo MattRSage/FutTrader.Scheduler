@@ -8,6 +8,6 @@ namespace FutTrader.Domain.EaFutApi.Models
         public string Name { get; set; }
 
         [JsonPropertyName("value")]
-        public string Value { get; set; }
+        public int Value { get; set; }
     }
 }
