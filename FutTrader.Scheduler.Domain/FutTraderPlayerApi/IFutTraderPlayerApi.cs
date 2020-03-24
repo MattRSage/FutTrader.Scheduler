@@ -5,6 +5,8 @@ namespace FutTrader.Domain.FutTraderPlayerApi
 {
     public interface IFutTraderPlayerApi
     {
-        Task<FUTPlayerItemResponse> PutAsync(FUTPlayerItemResponse page);
+        Task<FUTPlayerItem> CreateAsync(FUTPlayerItem player);
+
+        Task<FUTPlayerItem> PutAsync(FUTPlayerItem player);
     }
 }

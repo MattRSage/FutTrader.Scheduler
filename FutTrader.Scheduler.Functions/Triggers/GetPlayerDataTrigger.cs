@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using FutTrader.Domain.FutApi;
 using FutTrader.Domain.FutTraderPlayerApi;
@@ -24,8 +25,9 @@ namespace FutTrader.Scheduler.Functions.Triggers
             try
             {
                 var playerData = await _futApi.GetPlayerData();
-                
-                await _futTraderPlayerApi.PutAsync(playerData);
+                var firstPlayer = playerData.Items.First();
+
+                await _futTraderPlayerApi.CreateAsync(firstPlayer);
             }
             catch (Exception ex)
             {

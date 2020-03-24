@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using FutTrader.Domain.FutApi;
+using FutTrader.Domain.FutTraderPlayerApi;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;
@@ -19,6 +20,8 @@ namespace FutTrader.Scheduler.Functions
                 Directory.SetCurrentDirectory(hostDir);
             }
 
+            builder.Services.AddSingleton<IFutTraderPlayerApi, FutTraderPlayerApi>();
+            
             builder.Services.AddHttpClient<IFutApi, FutApi>()
                 .AddTransientHttpErrorPolicy(p =>
                     p.WaitAndRetryAsync(5, _ => TimeSpan.FromMilliseconds(600)));

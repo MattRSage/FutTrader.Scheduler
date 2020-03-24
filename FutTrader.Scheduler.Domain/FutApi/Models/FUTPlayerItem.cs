@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace FutTrader.Domain.FutApi.Models
 {
     public class FUTPlayerItem
     {
-        public int FutPlayerItemId { get; set; }
+        public Guid Id { get; set; }
         
         [JsonPropertyName("baseId")]
         public int BaseId { get; set; }
@@ -22,14 +23,17 @@ namespace FutTrader.Domain.FutApi.Models
         [JsonPropertyName("lastName")]
         public string LastName { get; set; }
 
-        [JsonPropertyName("league")]
-        public FUTLeagueItem League { get; set; }
+        // [JsonPropertyName("league")]
+        // public FUTLeagueItem League { get; set; }
+        //
+        // [JsonPropertyName("nation")]
+        // public FUTNationItem Nation { get; set; }
+        //
+        // [JsonPropertyName("club")]
+        // public FUTClubItem Club { get; set; }
         
-        [JsonPropertyName("nation")]
-        public FUTNationItem Nation { get; set; }
-        
-        [JsonPropertyName("club")]
-        public FUTClubItem Club { get; set; }
+        // [JsonPropertyName("attributes")]
+        // public List<FUTAttribute> Attributes { get; set; }
 
         [JsonPropertyName("position")]
         public string Position { get; set; }
@@ -174,9 +178,6 @@ namespace FutTrader.Domain.FutApi.Models
         
         [JsonPropertyName("defWorkRate")]
         public string DefensiveWorkRate { get; set; }
-
-        [JsonPropertyName("attributes")]
-        public List<FUTAttribute> Attributes { get; set; }
 
         [JsonPropertyName("name")]
         public string Name { get; set; }

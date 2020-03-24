@@ -17,10 +17,23 @@ namespace FutTrader.Domain.FutTraderPlayerApi
             _httpClient = httpClient;
             _settings = settings;
         }
-        
+
+        public async Task<FUTPlayerItem> CreateAsync(FUTPlayerItem player)
+        {
+            // var url = _settings.Url + "playercard" ;
+            var url = $"http://localhost:5000/api/playercard";
+            var payload = JsonSerializer.Serialize(player);
+            var content = new StringContent(payload, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PostAsync(new Uri(url), content);
+
+            var resultBody = await response.Content.ReadAsStringAsync();
+            return JsonSerializer.Deserialize<FUTPlayerItem>(resultBody);
+        }
+
         public async Task<FUTPlayerItem> PutAsync(FUTPlayerItem player)
         {
-            var url = _settings.Url + "player/" + player.FutPlayerItemId;
+            var url = _settings.Url + "player/" + player.Id;
             var payload = JsonSerializer.Serialize(player);
             var content = new StringContent(payload, Encoding.UTF8, "application/json");
 
