@@ -6,7 +6,8 @@ namespace FutTrader.Domain.FutApi.Models
 {
     public class FUTPlayerItem
     {
-        public Guid Id { get; set; }
+        [JsonPropertyName("id")]
+        public string Id { get; set; }
         
         [JsonPropertyName("baseId")]
         public int BaseId { get; set; }
@@ -23,18 +24,15 @@ namespace FutTrader.Domain.FutApi.Models
         [JsonPropertyName("lastName")]
         public string LastName { get; set; }
 
-        // [JsonPropertyName("league")]
-        // public FUTLeagueItem League { get; set; }
-        //
-        // [JsonPropertyName("nation")]
-        // public FUTNationItem Nation { get; set; }
-        //
-        // [JsonPropertyName("club")]
-        // public FUTClubItem Club { get; set; }
+        [JsonPropertyName("league")]
+        public FUTLeagueItem League { get; set; }
         
-        // [JsonPropertyName("attributes")]
-        // public List<FUTAttribute> Attributes { get; set; }
-
+        [JsonPropertyName("nation")]
+        public FUTNationItem Nation { get; set; }
+        
+        [JsonPropertyName("club")]
+        public FUTClubItem Club { get; set; }
+        
         [JsonPropertyName("position")]
         public string Position { get; set; }
         

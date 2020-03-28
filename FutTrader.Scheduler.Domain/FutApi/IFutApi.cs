@@ -5,6 +5,6 @@ namespace FutTrader.Domain.FutApi
 {
     public interface IFutApi
     {
-        Task<FUTPlayerItemResponse> GetPlayerData();
+        Task<FUTPlayerItemResponse> GetPlayerData(int pageNumber);
     }
 }

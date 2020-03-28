@@ -28,7 +28,9 @@ namespace FutTrader.Domain.FutTraderPlayerApi
             var response = await _httpClient.PostAsync(new Uri(url), content);
 
             var resultBody = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<FUTPlayerItem>(resultBody);
+            return string.IsNullOrEmpty(resultBody) ? 
+                null :
+                JsonSerializer.Deserialize<FUTPlayerItem>(resultBody);
         }
 
         public async Task<FUTPlayerItem> PutAsync(FUTPlayerItem player)

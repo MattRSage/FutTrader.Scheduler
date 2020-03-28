@@ -20,14 +20,21 @@ namespace FutTrader.Scheduler.Functions.Triggers
         }
         
         [FunctionName("GetPlayerData")]
-        public async Task Run([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer, ILogger logger)
+        public async Task Run([TimerTrigger("0 0 18 * * *", RunOnStartup = true)] TimerInfo myTimer, ILogger logger)
         {
             try
             {
-                var playerData = await _futApi.GetPlayerData();
-                var firstPlayer = playerData.Items.First();
+                var initialPageInfo = await _futApi.GetPlayerData(1);
 
-                await _futTraderPlayerApi.CreateAsync(firstPlayer);
+                for (int i = 0; i < 1; i++)
+                {
+                    var pageData = await _futApi.GetPlayerData(i + 1);
+
+                    foreach (var playerCard in pageData.Items)
+                    {
+                        await _futTraderPlayerApi.CreateAsync(playerCard);
+                    }
+                }
             }
             catch (Exception ex)
             {
