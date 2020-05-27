@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutTrader.Scheduler.Domain"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutTrader.Scheduler.Functions", "FutTrader.Scheduler.Functions\FutTrader.Scheduler.Functions.csproj", "{DBE393BF-725F-4636-AD20-3FD22BAE04D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutTrader.Scheduler.Domain.Tests", "FutTrader.Scheduler.Domain.Tests\FutTrader.Scheduler.Domain.Tests.csproj", "{762BF416-F2E5-401C-839F-26BD07AB148F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{DBE393BF-725F-4636-AD20-3FD22BAE04D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBE393BF-725F-4636-AD20-3FD22BAE04D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBE393BF-725F-4636-AD20-3FD22BAE04D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762BF416-F2E5-401C-839F-26BD07AB148F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762BF416-F2E5-401C-839F-26BD07AB148F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762BF416-F2E5-401C-839F-26BD07AB148F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762BF416-F2E5-401C-839F-26BD07AB148F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
